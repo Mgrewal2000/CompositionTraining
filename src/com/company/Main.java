@@ -13,8 +13,20 @@ public class Main {
 
         //OK so you have all the parts you need now....want to create a PC?
         PC newPc = new PC(theCase, monitor, motherboard); //Just created a PC
-        newPc.getMonitor().drawPixelAt(45,65,"Yellow");
-        newPc.getMotherboard().loadProgram("Warzone"); //accessing methods using composition
-        newPc.getTheCase().pressPowerButton(); //PC object accessing different methods
+        newPc.powerUp();
+
+        //Challenge
+        Wall wall1 = new Wall("West");
+        Wall wall2 = new Wall("East");
+        Wall wall3 = new Wall("North");
+        Wall wall4 = new Wall("South");
+        Ceiling ceiling = new Ceiling(20, "White");
+        Bed myBed = new Bed("Californian King", 4, 5, 1, 2);
+        Lamp yoLamp = new Lamp("Small sized", false, 9);
+        //Now you have everything you need to create a bedroom...create a bedroom now bud
+        Bedroom ManusBedroom = new Bedroom("manu",wall1, wall2, wall3, wall4, ceiling, myBed, yoLamp);
+
+        ManusBedroom.makeBed();
+        ManusBedroom.getLamp().turnOn();
     }
 }
