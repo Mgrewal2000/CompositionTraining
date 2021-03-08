@@ -3,14 +3,14 @@ package com.company;
 public class Bed {
     private String style;
     private int pillows;
-    private int heights;
+    private int height;
     private int sheets;
     private int quilt;
 
-    public Bed(String style, int pillows, int heights, int sheets, int quilt) {
+    public Bed(String style, int pillows, int height, int sheets, int quilt) {
         this.style = style;
         this.pillows = pillows;
-        this.heights = heights;
+        this.height = height;
         this.sheets = sheets;
         this.quilt = quilt;
     }
@@ -27,8 +27,8 @@ public class Bed {
         return pillows;
     }
 
-    public int getHeights() {
-        return heights;
+    public int getHeight() {
+        return height;
     }
 
     public int getSheets() {

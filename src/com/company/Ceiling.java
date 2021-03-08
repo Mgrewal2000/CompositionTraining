@@ -2,9 +2,9 @@ package com.company;
 
 public class Ceiling {
     private int height;
-    private String paintedColor;
+    private int paintedColor;
 
-    public Ceiling(int height, String paintedColor) {
+    public Ceiling(int height, int paintedColor) {
         this.height = height;
         this.paintedColor = paintedColor;
     }
@@ -13,7 +13,7 @@ public class Ceiling {
         return height;
     }
 
-    public String getPaintedColor() {
+    public int getPaintedColor() {
         return paintedColor;
     }
 }

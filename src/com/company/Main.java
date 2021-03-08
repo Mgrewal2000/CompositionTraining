@@ -20,7 +20,7 @@ public class Main {
         Wall wall2 = new Wall("East");
         Wall wall3 = new Wall("North");
         Wall wall4 = new Wall("South");
-        Ceiling ceiling = new Ceiling(20, "White");
+        Ceiling ceiling = new Ceiling(20, 1);
         Bed myBed = new Bed("Californian King", 4, 5, 1, 2);
         Lamp yoLamp = new Lamp("Small sized", false, 9);
         //Now you have everything you need to create a bedroom...create a bedroom now bud
